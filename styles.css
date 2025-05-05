@@ -1,13 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     line-height: 1.6;
-    background-color: #f5f5f5;
 }
 
 nav {
-    color: black;
     font-weight: bold;
     text-shadow: white 0.05em 0.05em 0.1em;
     padding: 1% 2%;
@@ -16,9 +13,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1000;
 }
 
 #page-name {
@@ -56,27 +51,20 @@ nav {
 }
 
 header {
-    background-color: #f5f5f5;
     padding: 1%;
     text-align: center;
-    font-size: 1em;
     border-top: 0.1em solid black;
     border-bottom: 0.1em solid black;
     max-width: 85%;
     margin: 0 auto;
     margin-top: 20em;
     margin-bottom: 4%;
-    position: relative;
 }
 
 h1 {
-    text-align: center;
     color: #4a4a4a;
     font-size: 3em;
-    font-weight: 709s;
-    margin: 1% 0;
     letter-spacing: -0.1%;
-    text-align: left;
     padding-left: 2.6em;
     margin-bottom: 6%;
 }
@@ -94,7 +82,6 @@ h1 {
     width: 35%;
     height: 25vw;
     object-fit: cover;
-    background-color: #f0f0f0;
 }
 
 #life {
@@ -108,26 +95,16 @@ h1 {
     margin-bottom: 1%;
     color: #4a4a4a;
     font-weight: 400;
-    text-align: left;
     padding-left: 4.2em;
 }
 
 #life p {
-    text-align: left;
     padding-left: 8.5rem;
 }
 
-.section2 {
-    padding: 3%;
-    background-color: #ffe0b2;
-    overflow: hidden;
-}
-
 #habits, #contact {
-    display: block;
     float: left;
     width: 50%;
-    margin-right: 1%;
     padding: 2%;
     height: 500px;
     box-sizing: border-box;
@@ -137,7 +114,7 @@ h1 {
     background-color: #d7ccc8;
     margin-right: 0;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-right: 5%;
 }
 
 #habits h2 {
@@ -145,20 +122,16 @@ h1 {
     margin-bottom: 1%;
     color: #4a4a4a;
     font-weight: 400;
-    text-align: left;
     padding-left: 3em;
 }
 
 #habits p {
-    text-align: left;
     padding-left: 6rem;
 }
 
 #contact {
     background-color: #ffccbc;
-    margin-right: 0;
     padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 #contact h2 {
@@ -166,14 +139,11 @@ h1 {
     margin-bottom: 1%;
     color: #4a4a4a;
     font-weight: 400;
-    text-align: left;
     padding-left: 3em;
 }
 
 #contact p {
-    text-align: left;
     padding-left: 6rem;
-    margin-bottom: 2%;
 }
 
 #contact input {
@@ -185,14 +155,12 @@ h1 {
     display: block;
     border: 0.1em solid #ccc;
     font-size: 1em;
-    box-shadow: inset 0 0.1% 0.3% rgba(0, 0, 0, 0.1);
     margin-bottom: 3%;
 }
 
 #contact button {
     padding: 1% 2%;
     background-color: #ffccbc;
-    color: black;
     border: 0.1em solid #ccc;
     border-radius: 2em;
     font-size: 1em;
@@ -203,17 +171,12 @@ h1 {
 }
 
 #contact button:hover {
-    background-color: #f8bbd0;
-    border-color: #999;
-    box-shadow: 0 0.2% 0.5% rgba(0, 0, 0, 0.2);
+    background-color: #d5a89a;
 }
 
 #dashboard {
-    background-color: #f5f5f5;
     padding-top: 5%;
-    padding-bottom: 5%;
     clear: both;
-    text-align: left;
     padding-left: 8em;
 }
 
@@ -248,62 +211,11 @@ h1 {
 
 .dashboard-item p {
     font-size: 1em;
-    color: #333;
     margin: 0 0 0.6rem 0;
-}
-
-.dashboard-item a {
-    text-decoration: none;
-    color: #333;
 }
 
 .dashboard-item a:hover {
     text-decoration: underline;
-}
-
-#modal { 
-    position: fixed; 
-    top: 30%; 
-    left: 50%; 
-    transform: translateX(-50%);
-    background-color: white; 
-    border: 0.1em solid black; 
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2); 
-    padding: 0.2em; 
-    padding-bottom: 2em;
-    z-index: 1000; 
-    display: none; 
-    width: 60vw; 
-    max-height: 60vh; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
-    text-align: center; 
-} 
-
-#modal-content {
-    width: 96%; 
-    height: 110%;
-    padding: 1.25em; 
-    overflow-y: auto; 
-    text-align: center; 
-}
-
-#modal-content h3 {
-    font-size: 2em;
-    color: black;
-    font-weight: 400;
-}
-
-#modal-content p {
-    font-size: 1.2em;
-    color: #333;
-    margin: 0 0 1.5em 0;
-}
-
-#modal-content h4 {
-    font-size: 1.5em;
-    color: #999;
-    font-weight: 400;
 }
 
 #close-btn {
@@ -313,11 +225,46 @@ h1 {
     border-radius: 1em;
     border: 0.1em solid #999; 
     transform: translateX(750%);
-    width: 5em; /* Largeur du bouton */
-    height: 2em; /* Hauteur du bouton */
-    font-size: 1.2em; /* Taille du texte à l'intérieur */
-    text-align: center; /* Centrer le texte */
-    cursor: pointer; /* Curseur interactif */
+    width: 5em;
+    height: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#modal { 
+    position: fixed; 
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 0.1em solid black; 
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2); 
+    padding: 0.2em; 
+    padding-bottom: 2em;
+    width: 60vw; 
+    max-height: 60vh; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+} 
+
+#modal-content {
+    width: 96%;
+    padding: 1.25em;
+    text-align: center; 
+}
+
+#modal-content h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#modal-content h4 {
+    font-size: 1.5em;
+    color: #999;
+    font-weight: 400;
+}
+
+#modal-content p {
+    font-size: 1.2em;
 }
 
 footer {
@@ -329,13 +276,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    margin-bottom: 0em;
-}
-
-#footer {
-    text-align: left;
 }
 
 #nav-links-footer {
@@ -346,10 +287,4 @@ footer {
 
 #nav-links-footer li a {
     color: #4a4a4a;
-    text-decoration: none;
-    text-decoration: underline;
-}
-
-#nav-links-footer li a:hover {
-    text-decoration: underline;
 }
